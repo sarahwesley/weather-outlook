@@ -1,0 +1,26 @@
+.search-column {
+    background-color: lightblue;
+}
+
+.list-group-item {
+    line-height: 0.5;
+    border: none;
+}
+
+
+span.severe{
+    padding: 6px;
+    background-color: red;
+    color:white;
+}
+
+span.moderate{
+    padding: 6px;
+    background-color: rgba(252, 227, 7, 0.562);
+}
+
+span.favorable {
+    padding: 6px;
+    background-color: lightgreen;
+    color:white;
+}

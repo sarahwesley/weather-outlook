@@ -6,7 +6,8 @@
 # Website:
 ## https://sarahwesley.github.io/weather-outlook/
 
-# Screenshot
+# MockUp
+# (/assets/images/mockup.png)
 
 # made with:
 ## HTML, CSS, JavaScript, Moment.js, Jquery, bootstrap

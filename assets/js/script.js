@@ -46,11 +46,15 @@ var getCityWeather = function(city) {
 
 // fucntion to dispay pulled data
 var displayWeather = function(weather, searchCity) {
-    console.log(weather);
+
+    // need to clear old searches to make room for new
+    weatherContainerEl.textContent = " ";
+    citySearchInputEl.textContent = searchCity;
+    //console.log(weather);
 
     // show current date
     var currentDate = document.createElement("span")
-    currentDate.textContent = "(" + moment(weather.dt.value).format("MMM D, YYYY") + ") ";
+    currentDate.textContent = " (" + moment(weather.dt.value).format("MMM D, YYYY") + ") ";
     citySearchInputEl.appendChild(currentDate);
 
     // show temputure data

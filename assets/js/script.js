@@ -101,7 +101,19 @@ var displayUvIndex = function(index){
     weatherContainerEl.appendChild(uvIndexEl);
 }
 
-// TODO fetch data for 5 day forecast
+// fetch data for 5 day forecast
+var get5Day = function (city) {
+    var apiKey = "524901&appid=51e858bcb3c9554aaabd869dfdb30a58";
+    var apiURL = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=imperial&appid=${apiKey}`
+
+    fetch(apiURL)
+    .then(function(response) {
+        response.json().then(fucntion(data) {
+            display5Day(data);
+        });
+    });
+};
+
 // TODO display data fro 5 day forecast
 
 // TODO create function to show past searches. show in past search bar once submitting "city" in search bar
